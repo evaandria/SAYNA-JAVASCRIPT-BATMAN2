@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+:root{
+    --yellow-color:#ffff00;
+    --yellow-light:#f8f184;
+    --blue-color:#19587d;
+    --red-color:#b11313;
+    --black-light:#0d0e09;
+    --gradient-white:#eddebf86;
+    --gradient-blue:#19587d;
+    --gradient-red:#610c0cc2;
+    --grey-color:#535151e8;
+    --black-color:#000000;
+    --white-color:#ffffff;
+}
+/*styles généraux*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Rajdhani';
+    font-size: 36px;
+    font-weight: 400;
+}
+
+button {
+    font-family: 'Rajdhani';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Space Grotesk';
+    font-size: 300;
+}
+
+body {
+    .bar-top {
+        border-top: 3px solid rgba(199, 196, 196, 0.603);
+        position: absolute;
+        left: 100px;
+        top: 140px;
+        right: 100px;
+    }
+    .bar-right {
+        border-right: 3px solid rgba(199, 196, 196, 0.603);
+        position: absolute;
+        height: 7100px;
+        right: 100px;
+        top: 0;
+        bottom: 0;
+    }
+    .bar-left {
+        border-left: 3px solid rgba(199, 196, 196, 0.603);
+        position: absolute;
+        height: 7100px;
+        left: 100px;
+        top: 0;
+    }
+}
+/*Design de la navigation*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 50px;
+}
+ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li a {
+    color: var(--white-color);
+    font-size: 35px;
+    font-weight: 500;
+    font-family: 'Rajdhani';
+    text-decoration: none;
+    padding-right: 20px;
+}
+nav ul a:hover {
+    color: violet;
+    text-decoration: underline;
+}
+nav ul a:active {
+    text-decoration: underline;
+}
+
+/*Design de la partie en tête hero*/
+
+header {
+    background-image: url(../Illustrations/Bathome1.png);
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+.texte, .btn {
+    font-family: 'Space Grotesk';
+    font-size: 23.5px;
+    font-weight: 300;
+}
+#hero .titre {
+    margin: 40px;
+    margin-bottom: 60px;
+}
+.btn {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 22px;
+    margin: 20px;
+    padding: 20px 40px;
+    background: linear-gradient(80deg, var(--gradient-white), var(--gradient-red));
+    box-shadow: var(--black-color) 15px 15px 60px;
+}
+/*Design du scroll*/
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 50px;
+    top: 350px;
+}
+.scroll .social {
+    margin: 20px;
+}
+#hero .fleche {
+    display: block;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+/*style du main*/
+#bat-cine h1 {
+    margin-top: 100px;
+}
+.para {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: justify;
+    width: 90%;
+    font-family: 'Space Grotesk';
+    font-size: 20px;
+    font-weight: 300;
+}
+/*Arrière plan du nemesis*/
+.nemesis {
+    background-image: url(../Illustrations/Bathome13.png);
+    background-repeat: no-repeat;
+    height: 200px;
+    background-position: top left 30px;
+}
+#nemesis h1 {
+    padding-top: 130px;
+}
+/*Design figure*/
+.figure {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    margin: 20px 0;
+}
+.legende {
+    padding-top: 30px;
+}
+.allies {
+    display: flex;
+    justify-content: space-between;
+}
+.photo {
+    margin-top: 40px;
+    width: 100%;
+}
+.figure h3 {
+    font-family: 'rajdhani';
+    text-align: center;
+}
+.figure p {
+    text-align: center;
+}
+/*style du multimedia*/
+.multimedia {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 40px auto;
+    padding: 40px;
+}
+#multimedia .t1 {
+    padding-left: 50px;
+}
+.multi-texte {
+    width: 40%;
+    padding: 20px;
+    background: linear-gradient(80deg, var(--gradient-white), var(--gradient-blue));
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.multi-content {
+    display: flex;
+    justify-content: center;
+}
+.multi-texte p {
+    font-size: 10px;
+}
+#multimedia {
+    padding: 40px;
+    margin: 40px;
+}
+.multi-texte h3 {
+    font-family: 'Space Grotesk';
+    font-size: 20px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+.multi-texte .jaune {
+    color: var(--yellow-color);
+}
+.fleche-2 {
+    height: 30%;
+    padding-top: 100px;
+}
+.bathome-ba {
+    padding-top: 50px;
+    width: 900px;
+    padding-left: 150px;
+}
+/*style du formulaire*/
+
+#formulaire {
+    background: linear-gradient(80deg,var(--gradient-white),var(--gradient-blue));
+    height: 650px;
+    text-align: justify center;
+    padding: 30px 300px;
+}
+#formulaire h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+#formulaire label h3 {
+    font-family: 'Space Grotesk';
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#formulaire .simple {
+    padding-bottom: 20px;
+}
+/*style input du formulaire*/
+#email, #message {
+    display: block;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    border-bottom: 1px solid var(--grey-color);
+    width: 80%;
+    padding: 10px 0;
+}
+#formulaire .icon img {
+    transform: rotate(90deg);
+    width: 20px;
+}
+#formulaire .label-simp {
+    margin: 10px 0;
+    border-bottom: 1px solid var(--grey-color);
+    width: 80%;
+    color: var(--grey-color);
+}
+::placeholder {
+    color: var(--grey-color);
+    font-size: 15px;
+}
+.btn-groupe {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.btn-groupe input {
+    opacity: 0;
+}
+.btn-groupe label {
+    cursor: pointer;
+    border: 2px solid;
+    padding: 10px;
+    border-image: linear-gradient(60deg,var(--gradient-white),var(--gradient-blue)) 1;
+    font-size: 20px;
+}
+input[type='submit'] {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    cursor: pointer;
+    background: linear-gradient(60deg,var(--gradient-white),var(--gradient-red));
+}
+#formulaire .simple {
+    color: var(--grey-color);
+}
+
+/*style du citation*/
+
+.citation {
+    background-color: var(--black-color);
+    height: 400px;
+    padding: 60px 100px;
+}
+.citation p {
+    text-align: center;
+    padding-top: 20px;
+}
+.citation .icone-1 {
+    margin-left: 200px;
+}
+.citation .icone-2 {
+    display: block;
+    margin-left: 850px;
+}
+/*style footer*/
+#pied {
+    height: 150px;
+}
+#pied .text-pied {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#pied .logo {
+    text-align: center;
+}
+#pied .logo a {
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
