@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+/*styles généraux*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Rajdhani';
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Space Grotesk';
+    font-size: 300;
+}
+
+body {
+    .bar-top {
+        border-top: 3px solid rgba(199, 196, 196, 0.603);
+        position: absolute;
+        left: 100px;
+        top: 140px;
+        right: 100px;
+    }
+    .bar-right {
+        border-right: 3px solid rgba(199, 196, 196, 0.603);
+        position: absolute;
+        height: 2000px;
+        right: 100px;
+        top: 0;
+        bottom: 0;
+    }
+    .bar-left {
+        border-left: 3px solid rgba(199, 196, 196, 0.603);
+        position: absolute;
+        height: 2000px;
+        left: 100px;
+        top: 0;
+    }
+}
+/*Design de la navigation*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 50px;
+}
+ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li a {
+    color: var(--white-color);
+    font-size: 35px;
+    font-weight: 500;
+    font-family: 'Rajdhani';
+    text-decoration: none;
+    padding-right: 20px;
+}
+nav ul a:hover {
+    color: violet;
+    text-decoration: underline;
+}
+nav ul a:active {
+    text-decoration: underline;
+}
+
+/*Design de la partie en tête hero*/
+
+header {
+    background-image: url(../Illustrations-20230530T122512Z-001/Illustrations/Batgame_1.png);
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content {
+    font-family: 'Rajdhani';
+    font-size: 80px;
+    font-weight: 500;
+    padding-left: 40px;
+    padding-top: 150px;
+}
+
+/*Design du scroll*/
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 50px;
+    top: 350px;
+}
+.scroll .social {
+    margin: 20px;
+}
+
+/*style du main*/
+main {
+    margin: 30px;
+    height: auto;
+}
+.titre {
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 100px;
+}
+#flex {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    padding: 30px 0;
+}
+.texte-quiz h2 {
+    font-size: 20px;
+    padding: 20px 0;
+}
+.input {
+    background-color: rgb(156, 169, 194);
+    margin: 10px 0;
+    padding: 15px 0; 
+}
+label {
+    padding-left: 10px;
+}
+.boutton {
+    text-align: center;
+    margin: 50px 0;
+}
+.boutton a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Rajdhani';
+    font-weight: 300;
+    font-size: 22px;
+    background: linear-gradient(80deg, grey, rgb(226, 167, 89));
+    padding: 20px 40px;
+}
+
+/*style footer*/
+#pied {
+    height: 150px;
+    padding-top: 150px;
+}
+#pied .text-pied {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#pied .logo {
+    text-align: center;
+}
+#pied .logo a {
+    margin: 10px;
+}
