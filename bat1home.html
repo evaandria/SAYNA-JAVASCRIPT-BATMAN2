@@ -12,7 +12,7 @@
         <div class="bar-left"></div>
         <header>
             <nav class="container">
-                <a href="index.html">
+                <a class='hover' href="index.html">
                     <img src="assets/Logos/logohome.png">
                 </a>
                 <ul>
@@ -38,6 +38,11 @@
                     <img class="social" src="./assets/Logos/icon_ig.png">
                     <img class="social" src="./assets/Logos/icon_tw.png">
                     <img src="./assets/Logos/logo_bat_flèche_2.png">
+                </div>
+                <div class="popupbox" id="popupbox">
+                    <div class="inside">
+                        <h1>Message reçu!</h1>
+                    </div>
                 </div>
                 <img class="fleche" src="assets/Logos/flèche_down_header.png">
             </section>
@@ -185,9 +190,10 @@
           <div id="formulaire">
               <h2>PRENONS CONTACT</h2>
 
-              <form action="" method="post">
+              <form action="" method="post" id="myform">
                   <label for="email"><h3>ADRESSE EMAIL</h3></label>
                   <input type="email" id="email" name="email" placeholder="Adresse email" required>
+                  <span id="invalid"></span>
                   <label for="sujet"><h3>NEWSLETTER</h3></label>
                   <label class="simple">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de
                   Batman :</label><input type="checkbox" value="Batman"><br>
@@ -245,5 +251,6 @@
               </div>
             </div>
         </footer>
+        <script src="assets/js/validator.js"></script>
     </body>
 </html>

@@ -93,6 +93,32 @@ nav ul a:hover {
 nav ul a:active {
     text-decoration: underline;
 }
+.btn:hover {
+    background: linear-gradient(80deg,rgba(237,222,191,1)40%,rgba(137,0,8,1)60%);
+}
+.hover:hover {
+    color: var(--yellow-color);
+}
+.social:hover {
+    color: var(--yellow-color);
+}
+#hero .popupbox {
+    background: linear-gradient(143deg,rgba(237,222,191,1),rgba(25,88,125,1)80%);
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    position: fixed;
+    top: 250px;
+    left: 300px;
+    .inside {
+        padding: 50px;
+        margin: 30px;
+        background-color: var(--blue-color);
+        border-radius: 20px;
+        box-shadow: 2px 2px 2px black;
+    }
+    display: none;
+}
 
 /*Design de la partie en tête hero*/
 
@@ -245,6 +271,10 @@ header {
     padding-left: 150px;
 }
 /*style du formulaire*/
+
+#invalid {
+    font-style: italic;
+}
 
 #formulaire {
     background: linear-gradient(80deg,var(--gradient-white),var(--gradient-blue));
