@@ -147,6 +147,9 @@ label {
     background: linear-gradient(80deg, grey, rgb(226, 167, 89));
     padding: 20px 40px;
 }
+#phase1 ,#phase2 ,#phase3 ,#phase4 ,#phase5 ,#phase6 ,#phase7 ,#phase8 ,#phase9 ,#phase10 ,#phase11 ,#phase12 ,#phase13 ,#phase14 {
+    display: none;
+}
 
 /*style footer*/
 #pied {

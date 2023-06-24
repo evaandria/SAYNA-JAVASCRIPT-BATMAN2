@@ -270,6 +270,9 @@ header {
     width: 900px;
     padding-left: 150px;
 }
+.photo2 {
+    display: none;
+}
 /*style du formulaire*/
 
 #invalid {
